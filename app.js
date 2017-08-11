@@ -6,11 +6,16 @@ const cookieParser = require('cookie-parser');
 const bodyParser   = require('body-parser');
 const layouts      = require('express-ejs-layouts');
 const mongoose     = require('mongoose');
-
-
-// mongoose.connect('mongodb://localhost/landing');
-
+const session      = require('express-session');
+const passport     = require('passport');
 const app = express();
+
+require('dotenv').config();
+require('./config/passport-config.js');
+// NAME OF DATABASE userSP //
+
+require('mongoose-type-url');
+mongoose.connect(process.env.MONGODB_URI);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
