@@ -11,7 +11,7 @@ const passport     = require('passport');
 const app = express();
 
 require('dotenv').config();
-require('./config/passport-config.js');
+// require('./config/passport-config.js'); <-- need to add
 // NAME OF DATABASE userSP //
 
 require('mongoose-type-url');
