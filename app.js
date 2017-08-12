@@ -14,8 +14,8 @@ require('dotenv').config();
 // require('./config/passport-config.js'); <-- need to add
 // NAME OF DATABASE userSP //
 
-require('mongoose-type-url');
-mongoose.connect(process.env.MONGODB_URI);
+// require('mongoose-type-url');
+// mongoose.connect(process.env.MONGODB_URI);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
