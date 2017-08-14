@@ -41,6 +41,9 @@ app.use('/', index);
 const about = require('./routes/about');
 app.use('/', about);
 
+const register = require('./routes/register');
+app.use('/', register);
+
 //////// <- ROUTES END -> //////////
 
 // catch 404 and forward to error handler

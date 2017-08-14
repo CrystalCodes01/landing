@@ -1346,7 +1346,24 @@ opacity: 0.2;
   text-decoration: underline;
 }
 
+.text6 {
+	color: black;
+	text-rendering: optimizeLegibility;
+	letter-spacing: 1px;
+  font-size: 20px;
+	font-weight: bolder;
+}
+
 .track {
   padding: 10px;
   font-weight: 100;
+}
+
+.max {
+	max-width: 200px;
+	max-height: 200px;
+}
+
+.border {
+	border-color: black;
 }
